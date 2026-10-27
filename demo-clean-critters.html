@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clean Critters — Pet Grooming in Austin, TX | Sample Site</title>
+<meta name="description" content="Sample homepage concept: Clean Critters — family-owned pet grooming in Austin, TX. Rated 4.8 from 69 Google reviews.">
+<style>
+  :root{
+    --brown:#6b4226; --brown2:#8a5a33; --accent:#e8873a; --accent-d:#cf6f22;
+    --ink:#3a2e26; --muted:#7a6a5e; --bg:#fdf6ef; --card:#ffffff; --line:#efdfd0;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+  a{text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+  .topbar{background:var(--brown);color:#f3e2d2;font-size:13px}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;padding:7px 18px;gap:10px;flex-wrap:wrap}
+  .call-btn{background:var(--accent);color:#fff;font-weight:700;padding:9px 18px;border-radius:6px;font-size:14px;white-space:nowrap}
+  .call-btn:hover{background:var(--accent-d)}
+  header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;padding:14px 18px}
+  .logo{font-size:22px;font-weight:800;color:var(--brown)}
+  .logo span{color:var(--accent)}
+  .logo small{display:block;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+  nav a{color:var(--ink);font-weight:600;font-size:15px;margin-left:22px}
+  nav a:hover{color:var(--accent)}
+  .hero{background:linear-gradient(135deg,var(--brown) 0%,var(--brown2) 100%);color:#fff}
+  .hero .wrap{padding:56px 18px 50px}
+  .hero h1{font-size:38px;line-height:1.15;max-width:660px}
+  .hero h1 em{font-style:normal;color:#ffb877}
+  .hero p{margin:16px 0 26px;font-size:17px;color:#f7e9db;max-width:580px}
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:13px 26px;border-radius:7px;font-weight:700;font-size:16px}
+  .btn-accent{background:var(--accent);color:#fff}
+  .btn-accent:hover{background:var(--accent-d)}
+  .btn-ghost{border:2px solid #dcb894;color:#fff}
+  .hero-badges{margin-top:30px;display:flex;gap:22px;flex-wrap:wrap;font-size:14px;color:#f3e2d2}
+  .hero-badges b{color:#fff}
+  section{padding:52px 0}
+  .alt{background:var(--bg)}
+  h2{font-size:27px;color:var(--brown);margin-bottom:8px}
+  .sub{color:var(--muted);margin-bottom:30px;max-width:660px}
+  .areas{display:flex;gap:12px;flex-wrap:wrap}
+  .area{background:#fff;border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:8px;padding:16px 20px;font-weight:700;color:var(--brown);min-width:180px;flex:1}
+  .area small{display:block;font-weight:500;color:var(--muted);margin-top:3px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:24px 20px}
+  .card .ic{font-size:30px;margin-bottom:10px}
+  .card h3{color:var(--brown);font-size:18px;margin-bottom:7px}
+  .card p{color:var(--muted);font-size:14.5px}
+  .why{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .why div{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px}
+  .why h3{color:var(--brown);font-size:17px;margin-bottom:6px}
+  .why p{color:var(--muted);font-size:14.5px}
+  .stars{color:#f5a623;font-size:20px;letter-spacing:2px}
+  .rating-big{font-size:34px;font-weight:800;color:var(--brown)}
+  .sample-note{font-size:12px;color:#b3a08e;margin-top:14px}
+  .quote{background:var(--brown);border-radius:12px;padding:34px;color:#fff}
+  .quote h2{color:#fff}
+  .quote .sub{color:#ecd9c6}
+  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .form-grid .full{grid-column:1/-1}
+  label{font-size:13px;font-weight:600;display:block;margin-bottom:5px;color:#f7e9db}
+  input,select,textarea{width:100%;padding:11px 12px;border-radius:6px;border:1px solid #a87c52;background:#fff;font-size:15px;color:var(--ink);font-family:inherit}
+  textarea{resize:vertical;min-height:84px}
+  .submit{margin-top:16px;background:var(--accent);color:#fff;border:none;padding:14px 30px;border-radius:7px;font-weight:700;font-size:16px;cursor:pointer;width:100%}
+  .submit:hover{background:var(--accent-d)}
+  .form-note{font-size:12.5px;color:#dcb894;margin-top:12px;text-align:center}
+  footer{background:#3d2716;color:#d8c3ae;padding:44px 0 30px;font-size:14.5px}
+  footer .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  footer h4{color:#fff;margin-bottom:10px;font-size:16px}
+  footer a{color:#d8c3ae}
+  footer a:hover{color:#fff}
+  .foot-bottom{border-top:1px solid #5f4128;margin-top:30px;padding-top:18px;font-size:12.5px;color:#b09478;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+  .demo-tag{background:#fdf0e2;border:1px dashed var(--accent);color:#8a4a16;border-radius:8px;padding:10px 16px;font-size:13px;margin:22px auto 0;max-width:1080px}
+  @media (max-width:820px){
+    .grid{grid-template-columns:1fr 1fr}
+    .why{grid-template-columns:1fr}
+    footer .cols{grid-template-columns:1fr}
+    .hero h1{font-size:30px}
+    nav{display:none}
+  }
+  @media (max-width:520px){
+    .grid{grid-template-columns:1fr}
+    .form-grid{grid-template-columns:1fr}
+    .topbar .wrap{justify-content:center;text-align:center}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div>Family-Owned Pet Grooming — East Austin</div>
+    <a class="call-btn" href="tel:+15124875075">📞 Call (512) 487-5075</a>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <div class="logo">Clean <span>Critters</span><small>Austin, Texas</small></div>
+    <nav>
+      <a href="#services">Grooming</a>
+      <a href="#areas">Visit Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#book">Book a Groom</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <h1>Happy, clean critters — <em>groomed by family</em>, right here in East Austin.</h1>
+    <p>Clean Critters is a family-owned grooming shop on E 7th St, run by owner Aimee Ryan. Dogs leave looking good and feeling calm — and owners deal with people who know their pets by name.</p>
+    <div class="hero-actions">
+      <a class="btn btn-accent" href="tel:+15124875075">📞 (512) 487-5075</a>
+      <a class="btn btn-ghost" href="#book">Request an Appointment</a>
+    </div>
+    <div class="hero-badges">
+      <div>⭐ <b>Rated 4.8</b> from 69 Google reviews</div>
+      <div>🏠 <b>Family-owned</b> &amp; operated</div>
+      <div>📍 <b>2614 E 7th St</b>, Austin</div>
+    </div>
+  </div>
+</div>
+
+<section id="areas">
+  <div class="wrap">
+    <h2>Visit the Shop</h2>
+    <p class="sub">One neighborhood shop, easy to find. [PARKING / DROP-OFF DETAILS — to be confirmed by the business]</p>
+    <div class="areas">
+      <div class="area">East Austin<small>2614 E 7th St, Austin, TX · The shop</small></div>
+      <div class="area">[NEIGHBORHOODS YOU SERVE]<small>[SERVICE NOTE]</small></div>
+      <div class="area">[MORE AREAS]<small>[SERVICE NOTE]</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="alt">
+  <div class="wrap">
+    <h2>Grooming Services</h2>
+    <p class="sub">What we do every day at the shop. [FULL SERVICE &amp; PRICE LIST — to be confirmed by the business]</p>
+    <div class="grid">
+      <div class="card">
+        <div class="ic">🐶</div>
+        <h3>Dog Grooming</h3>
+        <p>Full grooming appointments for dogs of all sizes. [WHAT'S INCLUDED — bath, cut, nails, ears — to be confirmed]</p>
+      </div>
+      <div class="card">
+        <div class="ic">🐩</div>
+        <h3>Doodle Care</h3>
+        <p>Doodles need a plan, not just a haircut — coat care and grooming routines for Doodle breeds are a specialty here. [DOODLE PROGRAM DETAILS — to be confirmed]</p>
+      </div>
+      <div class="card">
+        <div class="ic">🛍️</div>
+        <h3>Pet Retail</h3>
+        <p>Pick up supplies while you're in. [PRODUCT RANGE — to be confirmed by the business]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <h2>Why Pet Parents Pick Clean Critters</h2>
+    <div class="why">
+      <div>
+        <h3>Family-owned, owner on site</h3>
+        <p>Aimee Ryan owns and operates the shop — the person whose name is on the business is the person looking after your dog.</p>
+      </div>
+      <div>
+        <h3>Rated 4.8 by Austin pet owners</h3>
+        <p>Rated 4.8 from 69 Google reviews — earned one groom at a time, and shown right on the homepage.</p>
+      </div>
+      <div>
+        <h3>Doodles welcome (and understood)</h3>
+        <p>Doodle coats are different, and so is their upkeep. We groom a lot of them — and we explain the home care between visits.</p>
+      </div>
+      <div>
+        <h3>[YOUR DIFFERENTIATOR]</h3>
+        <p>[e.g. appointment lead times, gentle-handling approach, cat grooming — to be provided by the business]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="alt">
+  <div class="wrap">
+    <h2>What Customers Say</h2>
+    <div class="card" style="max-width:560px">
+      <div class="stars">★★★★★</div>
+      <div class="rating-big">4.8</div>
+      <p>Rated 4.8 from 69 Google reviews.</p>
+      <p class="sample-note">[Individual customer reviews will be pulled from the business's real Google profile at launch — no review text is shown on this sample.]</p>
+    </div>
+  </div>
+</section>
+
+<section id="book">
+  <div class="wrap">
+    <div class="quote">
+      <h2>Request a Grooming Appointment</h2>
+      <p class="sub">Tell us about your pet and we'll confirm a time. No digging through one long page to find how to book.</p>
+      <form action="#" method="post" onsubmit="return false;">
+        <div class="form-grid">
+          <div>
+            <label for="c-name">Your name</label>
+            <input id="c-name" type="text" placeholder="Your full name" autocomplete="name">
+          </div>
+          <div>
+            <label for="c-phone">Phone</label>
+            <input id="c-phone" type="tel" placeholder="(512) 000-0000" autocomplete="tel">
+          </div>
+          <div>
+            <label for="c-pet">Pet's name &amp; breed</label>
+            <input id="c-pet" type="text" placeholder="e.g. Biscuit — Goldendoodle">
+          </div>
+          <div>
+            <label for="c-service">Service</label>
+            <select id="c-service">
+              <option>Dog grooming</option>
+              <option>Doodle care</option>
+              <option>[OTHER SERVICE]</option>
+              <option>Not sure — please advise</option>
+            </select>
+          </div>
+          <div class="full">
+            <label for="c-msg">Anything we should know?</label>
+            <textarea id="c-msg" placeholder="e.g. Matting behind the ears, nervous around dryers…"></textarea>
+          </div>
+        </div>
+        <button class="submit" type="submit">Request Appointment</button>
+        <p class="form-note">Sample form (front-end only) — on a live site, submissions go straight to cleancrittersofaustin@gmail.com.</p>
+      </form>
+    </div>
+    <div class="demo-tag">🧪 Sample homepage concept built for Clean Critters — not affiliated with the business.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Clean Critters</h4>
+        <p>Family-owned pet grooming and retail in East Austin, owned and operated by Aimee Ryan.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>📞 <a href="tel:+15124875075">(512) 487-5075</a><br>
+        ✉️ <a href="mailto:cleancrittersofaustin@gmail.com">cleancrittersofaustin@gmail.com</a><br>
+        📍 2614 E 7th St, Austin, TX</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>[BUSINESS HOURS — to be confirmed by the business]</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 Clean Critters. (Sample site)</div>
+      <div>Sample homepage concept built for Clean Critters — not affiliated with the business.</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
