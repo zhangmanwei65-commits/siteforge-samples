@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lalo's Quality Drywall — Drywall &amp; Remodeling in Austin, TX | Sample Site</title>
+<meta name="description" content="Sample homepage concept: Lalo's Quality Drywall — drywall and remodeling in Austin, TX. Thumbtack Top Pro 2025, rated 4.9 from 79 Thumbtack reviews.">
+<style>
+  :root{
+    --slate:#33424f; --slate2:#41566a; --accent:#e8b10e; --accent-d:#c79505;
+    --ink:#2c3841; --muted:#5f6d77; --bg:#f4f6f7; --card:#ffffff; --line:#dbe2e7;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+  a{text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+  .topbar{background:var(--slate);color:#dde4e9;font-size:13px}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;padding:7px 18px;gap:10px;flex-wrap:wrap}
+  .call-btn{background:var(--accent);color:#26313a;font-weight:700;padding:9px 18px;border-radius:6px;font-size:14px;white-space:nowrap}
+  .call-btn:hover{background:var(--accent-d)}
+  header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;padding:14px 18px}
+  .logo{font-size:22px;font-weight:800;color:var(--slate)}
+  .logo span{color:var(--accent-d)}
+  .logo small{display:block;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+  nav a{color:var(--ink);font-weight:600;font-size:15px;margin-left:22px}
+  nav a:hover{color:var(--accent-d)}
+  .hero{background:linear-gradient(135deg,var(--slate) 0%,var(--slate2) 100%);color:#fff}
+  .hero .wrap{padding:56px 18px 50px}
+  .hero h1{font-size:38px;line-height:1.15;max-width:660px}
+  .hero h1 em{font-style:normal;color:#f5cd4a}
+  .hero p{margin:16px 0 26px;font-size:17px;color:#e0e7ec;max-width:580px}
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:13px 26px;border-radius:7px;font-weight:700;font-size:16px}
+  .btn-accent{background:var(--accent);color:#26313a}
+  .btn-accent:hover{background:var(--accent-d)}
+  .btn-ghost{border:2px solid #a7b6c0;color:#fff}
+  .hero-badges{margin-top:30px;display:flex;gap:22px;flex-wrap:wrap;font-size:14px;color:#dde4e9}
+  .hero-badges b{color:#fff}
+  section{padding:52px 0}
+  .alt{background:var(--bg)}
+  h2{font-size:27px;color:var(--slate);margin-bottom:8px}
+  .sub{color:var(--muted);margin-bottom:30px;max-width:660px}
+  .areas{display:flex;gap:12px;flex-wrap:wrap}
+  .area{background:#fff;border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:8px;padding:16px 20px;font-weight:700;color:var(--slate);min-width:180px;flex:1}
+  .area small{display:block;font-weight:500;color:var(--muted);margin-top:3px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:24px 20px}
+  .card .ic{font-size:30px;margin-bottom:10px}
+  .card h3{color:var(--slate);font-size:18px;margin-bottom:7px}
+  .card p{color:var(--muted);font-size:14.5px}
+  .why{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .why div{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px}
+  .why h3{color:var(--slate);font-size:17px;margin-bottom:6px}
+  .why p{color:var(--muted);font-size:14.5px}
+  .stars{color:#f5a623;font-size:20px;letter-spacing:2px}
+  .rating-big{font-size:34px;font-weight:800;color:var(--slate)}
+  .sample-note{font-size:12px;color:#93a1ab;margin-top:14px}
+  .quote{background:var(--slate);border-radius:12px;padding:34px;color:#fff}
+  .quote h2{color:#fff}
+  .quote .sub{color:#ccd6dd}
+  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .form-grid .full{grid-column:1/-1}
+  label{font-size:13px;font-weight:600;display:block;margin-bottom:5px;color:#e0e7ec}
+  input,select,textarea{width:100%;padding:11px 12px;border-radius:6px;border:1px solid #546876;background:#fff;font-size:15px;color:var(--ink);font-family:inherit}
+  textarea{resize:vertical;min-height:84px}
+  .submit{margin-top:16px;background:var(--accent);color:#26313a;border:none;padding:14px 30px;border-radius:7px;font-weight:700;font-size:16px;cursor:pointer;width:100%}
+  .submit:hover{background:var(--accent-d)}
+  .form-note{font-size:12.5px;color:#a7b6c0;margin-top:12px;text-align:center}
+  footer{background:#22303b;color:#b3c0c9;padding:44px 0 30px;font-size:14.5px}
+  footer .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  footer h4{color:#fff;margin-bottom:10px;font-size:16px}
+  footer a{color:#b3c0c9}
+  footer a:hover{color:#fff}
+  .foot-bottom{border-top:1px solid #3a4c5a;margin-top:30px;padding-top:18px;font-size:12.5px;color:#8595a1;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+  .demo-tag{background:#fdf6dd;border:1px dashed var(--accent-d);color:#6d5410;border-radius:8px;padding:10px 16px;font-size:13px;margin:22px auto 0;max-width:1080px}
+  @media (max-width:820px){
+    .grid{grid-template-columns:1fr 1fr}
+    .why{grid-template-columns:1fr}
+    footer .cols{grid-template-columns:1fr}
+    .hero h1{font-size:30px}
+    nav{display:none}
+  }
+  @media (max-width:520px){
+    .grid{grid-template-columns:1fr}
+    .form-grid{grid-template-columns:1fr}
+    .topbar .wrap{justify-content:center;text-align:center}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div>Drywall &amp; Remodeling — Austin, TX</div>
+    <a class="call-btn" href="tel:+15125799617">📞 Call (512) 579-9617</a>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <div class="logo">Lalo's <span>Quality Drywall</span><small>Austin, Texas</small></div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#areas">Service Area</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#quote">Get an Estimate</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <h1>Drywall done right — on a website with <em>his own name on it.</em></h1>
+    <p>Lalo's Quality Drywall is owner Eduardo "Lalo" Rangel's drywall and remodeling company in Austin. Hired 149 times on Thumbtack and named a Top Pro for 2025 — this is the homepage that record deserves.</p>
+    <div class="hero-actions">
+      <a class="btn btn-accent" href="tel:+15125799617">📞 (512) 579-9617</a>
+      <a class="btn btn-ghost" href="#quote">Get an Estimate</a>
+    </div>
+    <div class="hero-badges">
+      <div>🏆 <b>Thumbtack Top Pro</b> 2025</div>
+      <div>⭐ <b>4.9</b> from 79 Thumbtack reviews</div>
+      <div>🔨 <b>Hired 149 times</b> on Thumbtack</div>
+    </div>
+  </div>
+</div>
+
+<section id="areas">
+  <div class="wrap">
+    <h2>Where We Work</h2>
+    <p class="sub">Based in Austin, working across the metro. [FULL SERVICE AREA LIST — to be confirmed by the business]</p>
+    <div class="areas">
+      <div class="area">Austin<small>Home base</small></div>
+      <div class="area">[AREA 2]<small>[SERVICE NOTE]</small></div>
+      <div class="area">[AREA 3]<small>[SERVICE NOTE]</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="alt">
+  <div class="wrap">
+    <h2>Our Services</h2>
+    <p class="sub">Drywall and remodeling, owner-operated. [SERVICE DETAILS AND PROJECT PHOTOS — to be provided by the business]</p>
+    <div class="grid">
+      <div class="card">
+        <div class="ic">🧱</div>
+        <h3>Drywall Installation</h3>
+        <p>New drywall hung, taped and finished smooth — ready for paint.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🩹</div>
+        <h3>Drywall Repair</h3>
+        <p>Holes, cracks and water damage patched so the repair disappears.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🏠</div>
+        <h3>Remodeling</h3>
+        <p>Interior remodeling work alongside drywall — one owner on site for the whole job.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <h2>Why Austin Hires Lalo</h2>
+    <p class="sub">What a working homepage should make obvious in ten seconds:</p>
+    <div class="why">
+      <div>
+        <h3>Top Pro, proven volume</h3>
+        <p>Thumbtack Top Pro 2025 with 149 hires — the track record goes right on the homepage.</p>
+      </div>
+      <div>
+        <h3>You deal with the owner</h3>
+        <p>Eduardo "Lalo" Rangel is the owner and operator — the person you call is the person on the job.</p>
+      </div>
+      <div>
+        <h3>His name, his domain</h3>
+        <p>A real website under the business name — not a free page filed under somebody else's.</p>
+      </div>
+      <div>
+        <h3>[YOUR DIFFERENTIATOR]</h3>
+        <p>[e.g. texture matching, turnaround times, cleanup standards — to be provided by the business]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="alt">
+  <div class="wrap">
+    <h2>What Customers Say</h2>
+    <div class="card" style="max-width:560px">
+      <div class="stars">★★★★★</div>
+      <div class="rating-big">4.9</div>
+      <p>Rated 4.9 from 79 reviews on Thumbtack · 4.8 from 50 reviews on Angi · 4.9 from 14 reviews on HomeAdvisor.</p>
+      <p class="sample-note">[Individual customer reviews will be pulled from the business's real review profiles at launch — no review text is shown on this sample.]</p>
+    </div>
+  </div>
+</section>
+
+<section id="quote">
+  <div class="wrap">
+    <div class="quote">
+      <h2>Get an Estimate</h2>
+      <p class="sub">Tell us about the job and Lalo will get back to you.</p>
+      <form action="#" method="post" onsubmit="return false;">
+        <div class="form-grid">
+          <div>
+            <label for="l-name">Your name</label>
+            <input id="l-name" type="text" placeholder="Your full name" autocomplete="name">
+          </div>
+          <div>
+            <label for="l-phone">Phone</label>
+            <input id="l-phone" type="tel" placeholder="(512) 000-0000" autocomplete="tel">
+          </div>
+          <div>
+            <label for="l-service">Service needed</label>
+            <select id="l-service">
+              <option>Drywall installation</option>
+              <option>Drywall repair</option>
+              <option>Remodeling</option>
+              <option>Not sure — please advise</option>
+            </select>
+          </div>
+          <div>
+            <label for="l-city">Project city / neighborhood</label>
+            <input id="l-city" type="text" placeholder="e.g. Round Rock">
+          </div>
+          <div class="full">
+            <label for="l-msg">Tell us about the job</label>
+            <textarea id="l-msg" placeholder="e.g. Water damage patch in the living room ceiling, about 4x4 ft…"></textarea>
+          </div>
+        </div>
+        <button class="submit" type="submit">Request Estimate</button>
+        <p class="form-note">Sample form (front-end only) — on a live site, submissions go straight to eduardo95rangel@gmail.com and the customer gets a confirmation.</p>
+      </form>
+    </div>
+    <div class="demo-tag">🧪 Sample homepage concept built for Lalo's Quality Drywall — not affiliated with the business.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Lalo's Quality Drywall</h4>
+        <p>Drywall and remodeling in Austin, TX. Owner-operated by Eduardo "Lalo" Rangel.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>📞 <a href="tel:+15125799617">(512) 579-9617</a><br>
+        ✉️ <a href="mailto:eduardo95rangel@gmail.com">eduardo95rangel@gmail.com</a><br>
+        📍 Austin, TX [SERVICE-AREA BUSINESS — no public street address]</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>[BUSINESS HOURS — to be confirmed by the business]</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 Lalo's Quality Drywall. (Sample site)</div>
+      <div>Sample homepage concept built for Lalo's Quality Drywall — not affiliated with the business.</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
