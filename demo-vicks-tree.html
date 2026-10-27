@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vick's Tree Experts — Tree Service in Pflugerville, TX | Sample Site</title>
+<meta name="description" content="Sample homepage concept: Vick's Tree Experts — tree removal, trimming and emergency tree service in Pflugerville, TX. In business since 2004.">
+<style>
+  :root{
+    --pine:#173d24; --pine2:#1f5231; --accent:#7cb342; --accent-d:#5d8f2e;
+    --ink:#26302a; --muted:#5c6b60; --bg:#f3f7f2; --card:#ffffff; --line:#d8e2d5;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+  a{text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+  .topbar{background:var(--pine);color:#d3e6d2;font-size:13px}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;padding:7px 18px;gap:10px;flex-wrap:wrap}
+  .call-btn{background:var(--accent);color:#fff;font-weight:700;padding:9px 18px;border-radius:6px;font-size:14px;white-space:nowrap}
+  .call-btn:hover{background:var(--accent-d)}
+  header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;padding:14px 18px}
+  .logo{font-size:22px;font-weight:800;color:var(--pine)}
+  .logo span{color:var(--accent-d)}
+  .logo small{display:block;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+  nav a{color:var(--ink);font-weight:600;font-size:15px;margin-left:22px}
+  nav a:hover{color:var(--accent-d)}
+  .hero{background:linear-gradient(135deg,var(--pine) 0%,var(--pine2) 100%);color:#fff}
+  .hero .wrap{padding:56px 18px 50px}
+  .hero h1{font-size:38px;line-height:1.15;max-width:660px}
+  .hero h1 em{font-style:normal;color:#a5d68a}
+  .hero p{margin:16px 0 26px;font-size:17px;color:#dcead8;max-width:580px}
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:13px 26px;border-radius:7px;font-weight:700;font-size:16px}
+  .btn-accent{background:var(--accent);color:#fff}
+  .btn-accent:hover{background:var(--accent-d)}
+  .btn-ghost{border:2px solid #a9c4a2;color:#fff}
+  .hero-badges{margin-top:30px;display:flex;gap:22px;flex-wrap:wrap;font-size:14px;color:#d3e6d2}
+  .hero-badges b{color:#fff}
+  section{padding:52px 0}
+  .alt{background:var(--bg)}
+  h2{font-size:27px;color:var(--pine);margin-bottom:8px}
+  .sub{color:var(--muted);margin-bottom:30px;max-width:660px}
+  .areas{display:flex;gap:12px;flex-wrap:wrap}
+  .area{background:#fff;border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:8px;padding:16px 20px;font-weight:700;color:var(--pine);min-width:180px;flex:1}
+  .area small{display:block;font-weight:500;color:var(--muted);margin-top:3px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:24px 20px}
+  .card .ic{font-size:30px;margin-bottom:10px}
+  .card h3{color:var(--pine);font-size:18px;margin-bottom:7px}
+  .card p{color:var(--muted);font-size:14.5px}
+  .why{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .why div{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px}
+  .why h3{color:var(--pine);font-size:17px;margin-bottom:6px}
+  .why p{color:var(--muted);font-size:14.5px}
+  .stars{color:#f5a623;font-size:20px;letter-spacing:2px}
+  .rating-big{font-size:34px;font-weight:800;color:var(--pine)}
+  .sample-note{font-size:12px;color:#93a48f;margin-top:14px}
+  .quote{background:var(--pine);border-radius:12px;padding:34px;color:#fff}
+  .quote h2{color:#fff}
+  .quote .sub{color:#c8dcc2}
+  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .form-grid .full{grid-column:1/-1}
+  label{font-size:13px;font-weight:600;display:block;margin-bottom:5px;color:#dcead8}
+  input,select,textarea{width:100%;padding:11px 12px;border-radius:6px;border:1px solid #3c5c43;background:#fff;font-size:15px;color:var(--ink);font-family:inherit}
+  textarea{resize:vertical;min-height:84px}
+  .submit{margin-top:16px;background:var(--accent);color:#fff;border:none;padding:14px 30px;border-radius:7px;font-weight:700;font-size:16px;cursor:pointer;width:100%}
+  .submit:hover{background:var(--accent-d)}
+  .form-note{font-size:12.5px;color:#a9c4a2;margin-top:12px;text-align:center}
+  footer{background:#0e2a18;color:#b3c6ae;padding:44px 0 30px;font-size:14.5px}
+  footer .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  footer h4{color:#fff;margin-bottom:10px;font-size:16px}
+  footer a{color:#b3c6ae}
+  footer a:hover{color:#fff}
+  .foot-bottom{border-top:1px solid #274a30;margin-top:30px;padding-top:18px;font-size:12.5px;color:#829a7c;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+  .demo-tag{background:#eff6ec;border:1px dashed var(--accent-d);color:#2c5426;border-radius:8px;padding:10px 16px;font-size:13px;margin:22px auto 0;max-width:1080px}
+  @media (max-width:820px){
+    .grid{grid-template-columns:1fr 1fr}
+    .why{grid-template-columns:1fr}
+    footer .cols{grid-template-columns:1fr}
+    .hero h1{font-size:30px}
+    nav{display:none}
+  }
+  @media (max-width:520px){
+    .grid{grid-template-columns:1fr}
+    .form-grid{grid-template-columns:1fr}
+    .topbar .wrap{justify-content:center;text-align:center}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div>Tree Removal · Trimming · Emergency Service — Pflugerville, TX</div>
+    <a class="call-btn" href="tel:+17372013965">📞 Call (737) 201-3965</a>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <div class="logo">Vick's <span>Tree Experts</span><small>Pflugerville, Texas · Since 2004</small></div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#areas">Service Area</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#quote">Get an Estimate</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <h1>Tree work in Pflugerville, done by people who've done it <em>since 2004</em>.</h1>
+    <p>Vick's Tree Experts removes, trims and cleans up trees for homes and businesses across the Pflugerville and North Austin area — with a certified arborist on staff and service in English and Spanish.</p>
+    <div class="hero-actions">
+      <a class="btn btn-accent" href="tel:+17372013965">📞 (737) 201-3965</a>
+      <a class="btn btn-ghost" href="#quote">Request an Estimate</a>
+    </div>
+    <div class="hero-badges">
+      <div>🌳 <b>22 years</b> in business</div>
+      <div>🎓 <b>Certified arborist</b> on staff</div>
+      <div>🗣️ <b>English / Spanish</b></div>
+    </div>
+  </div>
+</div>
+
+<section id="areas">
+  <div class="wrap">
+    <h2>Where We Work</h2>
+    <p class="sub">Based in Pflugerville. [FULL SERVICE AREA LIST — to be confirmed by the business]</p>
+    <div class="areas">
+      <div class="area">Pflugerville<small>Home base</small></div>
+      <div class="area">Round Rock<small>[SERVICE NOTE]</small></div>
+      <div class="area">North Austin<small>[SERVICE NOTE]</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="alt">
+  <div class="wrap">
+    <h2>Our Services</h2>
+    <p class="sub">Residential and commercial tree care. [SERVICE DETAILS AND PRICING NOTES — to be confirmed by the business]</p>
+    <div class="grid">
+      <div class="card">
+        <div class="ic">🪓</div>
+        <h3>Tree Removal</h3>
+        <p>Safe removal of dead, damaged or unwanted trees, including hazard trees close to roofs and lines.</p>
+      </div>
+      <div class="card">
+        <div class="ic">✂️</div>
+        <h3>Trimming &amp; Pruning</h3>
+        <p>Trimming and pruning that keeps trees healthy and clear of the house — done to arborist standards.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🚨</div>
+        <h3>Emergency Tree Service</h3>
+        <p>Storm damage and fallen trees handled fast, so the yard is safe again.</p>
+      </div>
+      <div class="card">
+        <div class="ic">⚠️</div>
+        <h3>Hazard Tree Work</h3>
+        <p>Leaning, split or diseased trees assessed and taken down before they come down on their own.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🌿</div>
+        <h3>Brush &amp; Shrub Removal</h3>
+        <p>Brush and shrub removal and lot cleanup for overgrown properties.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🪵</div>
+        <h3>Fence Installation &amp; Repair</h3>
+        <p>Fence installation and repair alongside tree work — one crew for the whole yard.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <h2>Why Pflugerville Calls Vick's</h2>
+    <p class="sub">What a working homepage should make obvious in ten seconds:</p>
+    <div class="why">
+      <div>
+        <h3>Doing this since 2004</h3>
+        <p>More than two decades of tree work in the Austin area — this isn't a weekend side operation.</p>
+      </div>
+      <div>
+        <h3>Certified arborist on staff</h3>
+        <p>Your trees are assessed by someone trained to tell what can be saved and what has to go.</p>
+      </div>
+      <div>
+        <h3>Bilingual crew</h3>
+        <p>Full service in English and Spanish — no middleman translating your job.</p>
+      </div>
+      <div>
+        <h3>[YOUR DIFFERENTIATOR]</h3>
+        <p>[e.g. insurance, cleanup guarantees, response times — to be provided by the business]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="alt">
+  <div class="wrap">
+    <h2>What Customers Say</h2>
+    <div class="card" style="max-width:560px">
+      <div class="stars">★★★★☆</div>
+      <div class="rating-big">3.7</div>
+      <p>Rated 3.7 from 28 Google reviews.</p>
+      <p class="sample-note">[Individual customer reviews will be pulled from the business's real Google profile at launch — no review text is shown on this sample.]</p>
+    </div>
+  </div>
+</section>
+
+<section id="quote">
+  <div class="wrap">
+    <div class="quote">
+      <h2>Request a Tree Estimate</h2>
+      <p class="sub">Tell us what's going on with your trees and we'll come take a look.</p>
+      <form action="#" method="post" onsubmit="return false;">
+        <div class="form-grid">
+          <div>
+            <label for="v-name">Your name</label>
+            <input id="v-name" type="text" placeholder="Your full name" autocomplete="name">
+          </div>
+          <div>
+            <label for="v-phone">Phone</label>
+            <input id="v-phone" type="tel" placeholder="(512) 000-0000" autocomplete="tel">
+          </div>
+          <div>
+            <label for="v-service">Service needed</label>
+            <select id="v-service">
+              <option>Tree removal</option>
+              <option>Trimming / pruning</option>
+              <option>Emergency / storm damage</option>
+              <option>Brush or shrub removal</option>
+              <option>Not sure — please advise</option>
+            </select>
+          </div>
+          <div>
+            <label for="v-city">Property city</label>
+            <input id="v-city" type="text" placeholder="e.g. Pflugerville">
+          </div>
+          <div class="full">
+            <label for="v-msg">Tell us about the tree(s)</label>
+            <textarea id="v-msg" placeholder="e.g. Large oak leaning toward the roof after the last storm…"></textarea>
+          </div>
+        </div>
+        <button class="submit" type="submit">Request Estimate</button>
+        <p class="form-note">Sample form (front-end only) — on a live site, submissions go straight to the business inbox and the customer gets a confirmation.</p>
+      </form>
+    </div>
+    <div class="demo-tag">🧪 Sample homepage concept built for Vick's Tree Experts — not affiliated with the business.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Vick's Tree Experts</h4>
+        <p>Tree removal, trimming and emergency tree service based in Pflugerville, TX. In business since 2004.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>📞 <a href="tel:+17372013965">(737) 201-3965</a><br>
+        ✉️ <a href="mailto:vick_rebo@icloud.com">vick_rebo@icloud.com</a><br>
+        📍 1105 Timber Bend Drive, Pflugerville, TX 78660</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>[BUSINESS HOURS — to be confirmed by the business]</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 Vick's Tree Experts. (Sample site)</div>
+      <div>Sample homepage concept built for Vick's Tree Experts — not affiliated with the business.</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
