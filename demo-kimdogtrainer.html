@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kim the Dog Trainer — Dog Training in Austin, TX | Sample Site</title>
+<meta name="description" content="Sample homepage concept: Kim the Dog Trainer — certified dog training in Austin, TX by Kim Roche, CDBC, CPDT-KA, CSAT. Rated 4.6 from 21 reviews.">
+<style>
+  :root{
+    --navy:#2e4634; --navy2:#3d5c44; --accent:#d97b2f; --accent-d:#bc651f;
+    --ink:#2c352c; --muted:#5f6d5f; --bg:#f4f7f1; --card:#ffffff; --line:#dbe5d6;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+  a{text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+  .topbar{background:var(--navy);color:#dcead9;font-size:13px}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;padding:7px 18px;gap:10px;flex-wrap:wrap}
+  .call-btn{background:var(--accent);color:#fff;font-weight:700;padding:9px 18px;border-radius:6px;font-size:14px;white-space:nowrap}
+  .call-btn:hover{background:var(--accent-d)}
+  header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;padding:14px 18px}
+  .logo{font-size:22px;font-weight:800;color:var(--navy)}
+  .logo span{color:var(--accent)}
+  .logo small{display:block;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+  nav a{color:var(--ink);font-weight:600;font-size:15px;margin-left:22px}
+  nav a:hover{color:var(--accent)}
+  .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%);color:#fff}
+  .hero .wrap{padding:56px 18px 50px}
+  .hero h1{font-size:38px;line-height:1.15;max-width:680px}
+  .hero h1 em{font-style:normal;color:#f5c689}
+  .hero p{margin:16px 0 26px;font-size:17px;color:#dde9da;max-width:600px}
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:13px 26px;border-radius:7px;font-weight:700;font-size:16px}
+  .btn-accent{background:var(--accent);color:#fff}
+  .btn-accent:hover{background:var(--accent-d)}
+  .btn-ghost{border:2px solid #a9c2a2;color:#fff}
+  .hero-badges{margin-top:30px;display:flex;gap:22px;flex-wrap:wrap;font-size:14px;color:#dcead9}
+  .hero-badges b{color:#fff}
+  section{padding:52px 0}
+  .alt{background:var(--bg)}
+  h2{font-size:27px;color:var(--navy);margin-bottom:8px}
+  .sub{color:var(--muted);margin-bottom:30px;max-width:680px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:24px 20px}
+  .card .ic{font-size:30px;margin-bottom:10px}
+  .card h3{color:var(--navy);font-size:18px;margin-bottom:7px}
+  .card p{color:var(--muted);font-size:14.5px}
+  .why{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .why div{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px}
+  .why h3{color:var(--navy);font-size:17px;margin-bottom:6px}
+  .why p{color:var(--muted);font-size:14.5px}
+  .stars{color:#f5a623;font-size:20px;letter-spacing:2px}
+  .rating-big{font-size:34px;font-weight:800;color:var(--navy)}
+  .sample-note{font-size:12px;color:#93a3ae;margin-top:14px}
+  .quote{background:var(--navy);border-radius:12px;padding:34px;color:#fff}
+  .quote h2{color:#fff}
+  .quote .sub{color:#cfe0ca}
+  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .form-grid .full{grid-column:1/-1}
+  label{font-size:13px;font-weight:600;display:block;margin-bottom:5px;color:#dde9da}
+  input,select,textarea{width:100%;padding:11px 12px;border-radius:6px;border:1px solid #44624a;background:#fff;font-size:15px;color:var(--ink);font-family:inherit}
+  textarea{resize:vertical;min-height:84px}
+  .submit{margin-top:16px;background:var(--accent);color:#fff;border:none;padding:14px 30px;border-radius:7px;font-weight:700;font-size:16px;cursor:pointer;width:100%}
+  .submit:hover{background:var(--accent-d)}
+  .form-note{font-size:12.5px;color:#a9c2a2;margin-top:12px;text-align:center}
+  footer{background:#1c2d21;color:#b3c6ae;padding:44px 0 30px;font-size:14.5px}
+  footer .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  footer h4{color:#fff;margin-bottom:10px;font-size:16px}
+  footer a{color:#b3c6ae}
+  footer a:hover{color:#fff}
+  .foot-bottom{border-top:1px solid #33503a;margin-top:30px;padding-top:18px;font-size:12.5px;color:#7e9478;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+  .demo-tag{background:#fdf3e6;border:1px dashed var(--accent);color:#7a4a15;border-radius:8px;padding:10px 16px;font-size:13px;margin:22px auto 0;max-width:1080px}
+  @media (max-width:820px){
+    .grid{grid-template-columns:1fr 1fr}
+    .why{grid-template-columns:1fr}
+    footer .cols{grid-template-columns:1fr}
+    .hero h1{font-size:30px}
+    nav{display:none}
+  }
+  @media (max-width:520px){
+    .grid{grid-template-columns:1fr}
+    .form-grid{grid-template-columns:1fr}
+    .topbar .wrap{justify-content:center;text-align:center}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div>Certified Dog Training — Austin, TX · Kim Roche, CDBC · CPDT-KA · CSAT</div>
+    <a class="call-btn" href="tel:+15127965783">📞 Call (512) 796-5783</a>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <div class="logo">Kim the <span>Dog Trainer</span><small>Austin, Texas</small></div>
+    <nav>
+      <a href="#services">Training</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#start">Get Started</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <h1>Dog training in Austin — <em>the Austin page</em> Austin dog owners have been looking for.</h1>
+    <p>Kim Roche is a certified dog trainer working right here in Austin, TX. Tell us what's going on with your dog and get a training plan built around your dog — not a generic class.</p>
+    <div class="hero-actions">
+      <a class="btn btn-accent" href="tel:+15127965783">📞 (512) 796-5783</a>
+      <a class="btn btn-ghost" href="#start">Ask About Training</a>
+    </div>
+    <div class="hero-badges">
+      <div>⭐ <b>Rated 4.6</b> from 21 customer reviews</div>
+      <div>🎓 <b>Certified</b> CDBC · CPDT-KA · CSAT</div>
+      <div>📍 <b>Austin, TX</b> 78704</div>
+    </div>
+  </div>
+</div>
+
+<section id="services" class="alt">
+  <div class="wrap">
+    <h2>Training Programs</h2>
+    <p class="sub">Help for the problems Austin dog owners actually call about. [FINAL PROGRAM LIST &amp; PRICING — to be confirmed by Kim]</p>
+    <div class="grid">
+      <div class="card">
+        <div class="ic">🐶</div>
+        <h3>Puppy Training</h3>
+        <p>House training, socialization, biting, and the manners that are easiest to teach early. [AGE RANGE / FORMAT — to be confirmed]</p>
+      </div>
+      <div class="card">
+        <div class="ic">🦮</div>
+        <h3>Private Lessons &amp; Manners</h3>
+        <p>Leash pulling, jumping, recall, and calm behavior at home and on Austin's trails. [SESSION FORMAT — to be confirmed]</p>
+      </div>
+      <div class="card">
+        <div class="ic">🧠</div>
+        <h3>Behavior Consultations</h3>
+        <p>Reactivity, fear and aggression cases assessed by a certified behavior consultant (CDBC). [PROCESS — to be confirmed]</p>
+      </div>
+      <div class="card">
+        <div class="ic">🏠</div>
+        <h3>Separation Anxiety</h3>
+        <p>A structured program for dogs who panic when left alone, from a certified separation anxiety trainer (CSAT). [FORMAT — to be confirmed]</p>
+      </div>
+      <div class="card">
+        <div class="ic">💻</div>
+        <h3>Virtual Coaching</h3>
+        <p>[IF OFFERED — remote sessions and follow-up support, to be confirmed]</p>
+      </div>
+      <div class="card">
+        <div class="ic">📋</div>
+        <h3>Custom Training Plans</h3>
+        <p>A plan written for your dog, your home, and your schedule — with homework you can actually keep up with.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <h2>Why Austin Trains with Kim</h2>
+    <p class="sub">What a working homepage should make obvious in ten seconds:</p>
+    <div class="why">
+      <div>
+        <h3>Certified, three ways</h3>
+        <p>CDBC, CPDT-KA and CSAT credentials — behavior-consultant level certification, not just experience claims.</p>
+      </div>
+      <div>
+        <h3>Local to Austin</h3>
+        <p>Based in Austin, TX 78704 — training for Austin dogs, Austin homes, and Austin's dog-friendly patios and trails.</p>
+      </div>
+      <div>
+        <h3>Rated 4.6 by clients</h3>
+        <p>4.6 stars from 21 customer reviews, shown where a searching dog owner will see it first.</p>
+      </div>
+      <div>
+        <h3>[YOUR DIFFERENTIATOR]</h3>
+        <p>[e.g. methods, years of experience, guarantees — to be provided by Kim]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="alt">
+  <div class="wrap">
+    <h2>What Clients Say</h2>
+    <div class="card" style="max-width:560px">
+      <div class="stars">★★★★★</div>
+      <div class="rating-big">4.6</div>
+      <p>Rated 4.6 from 21 customer reviews.</p>
+      <p class="sample-note">[Individual client reviews will be pulled from Kim's real review profiles at launch — no review text is shown on this sample.]</p>
+    </div>
+  </div>
+</section>
+
+<section id="start">
+  <div class="wrap">
+    <div class="quote">
+      <h2>Tell Kim About Your Dog</h2>
+      <p class="sub">Two minutes here saves a lot of guessing later. Send it and Kim gets back to you with the right next step for your dog.</p>
+      <form action="#" method="post" onsubmit="return false;">
+        <div class="form-grid">
+          <div>
+            <label for="t-name">Your name</label>
+            <input id="t-name" type="text" placeholder="Your full name" autocomplete="name">
+          </div>
+          <div>
+            <label for="t-phone">Phone</label>
+            <input id="t-phone" type="tel" placeholder="(512) 000-0000" autocomplete="tel">
+          </div>
+          <div>
+            <label for="t-email">Email</label>
+            <input id="t-email" type="email" placeholder="you@example.com" autocomplete="email">
+          </div>
+          <div>
+            <label for="t-dog">Your dog (breed &amp; age)</label>
+            <input id="t-dog" type="text" placeholder="e.g. Aussie mix, 8 months">
+          </div>
+          <div class="full">
+            <label for="t-need">What do you need help with?</label>
+            <select id="t-need">
+              <option>Puppy training</option>
+              <option>Leash pulling / manners</option>
+              <option>Reactivity, fear or aggression</option>
+              <option>Separation anxiety</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="full">
+            <label for="t-msg">Tell us more</label>
+            <textarea id="t-msg" placeholder="e.g. Barks and lunges at other dogs on walks around the neighborhood…"></textarea>
+          </div>
+        </div>
+        <button class="submit" type="submit">Ask About Training</button>
+        <p class="form-note">Sample form (front-end only) — on a live site, enquiries go straight to info@kimthedogtrainer.com and you get a confirmation.</p>
+      </form>
+    </div>
+    <div class="demo-tag">🧪 Sample homepage concept built for Kim the Dog Trainer — not affiliated with the business.</div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Kim the Dog Trainer</h4>
+        <p>Certified dog training in Austin, TX by Kim Roche — CDBC, CPDT-KA, CSAT.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>📞 <a href="tel:+15127965783">(512) 796-5783</a><br>
+        ✉️ <a href="mailto:info@kimthedogtrainer.com">info@kimthedogtrainer.com</a><br>
+        📍 Austin, TX 78704</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>[TRAINING HOURS / SERVICE AREA — to be confirmed by Kim]</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 Kim the Dog Trainer. (Sample site)</div>
+      <div>Sample homepage concept built for Kim the Dog Trainer — not affiliated with the business.</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
