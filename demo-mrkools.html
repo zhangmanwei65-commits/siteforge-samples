@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mr. Kool's Air-dition LLC — AC Service in San Marcos, TX | Sample Site</title>
+<meta name="description" content="Sample homepage concept: Mr. Kool's Air-dition LLC — air conditioning, heating and plumbing service in San Marcos, TX. Rated 4.9 from 25 reviews. Licensed TACLB92599C.">
+<style>
+  :root{
+    --navy:#083344; --navy2:#0e4a63; --accent:#0891b2; --accent-d:#0e7490;
+    --ink:#22303c; --muted:#5a6b78; --bg:#f2f8fa; --card:#ffffff; --line:#d5e5ea;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+  a{text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+  .topbar{background:var(--navy);color:#cdeef5;font-size:13px}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;padding:7px 18px;gap:10px;flex-wrap:wrap}
+  .call-btn{background:var(--accent);color:#fff;font-weight:700;padding:9px 18px;border-radius:6px;font-size:14px;white-space:nowrap}
+  .call-btn:hover{background:var(--accent-d)}
+  header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;padding:14px 18px}
+  .logo{font-size:22px;font-weight:800;color:var(--navy)}
+  .logo span{color:var(--accent)}
+  .logo small{display:block;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+  nav a{color:var(--ink);font-weight:600;font-size:15px;margin-left:22px}
+  nav a:hover{color:var(--accent)}
+  .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%);color:#fff}
+  .hero .wrap{padding:56px 18px 50px}
+  .hero h1{font-size:38px;line-height:1.15;max-width:660px}
+  .hero h1 em{font-style:normal;color:#67e8f9}
+  .hero p{margin:16px 0 26px;font-size:17px;color:#d3edf3;max-width:580px}
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:13px 26px;border-radius:7px;font-weight:700;font-size:16px}
+  .btn-accent{background:var(--accent);color:#fff}
+  .btn-accent:hover{background:var(--accent-d)}
+  .btn-ghost{border:2px solid #8fc3d1;color:#fff}
+  .hero-badges{margin-top:30px;display:flex;gap:22px;flex-wrap:wrap;font-size:14px;color:#cdeef5}
+  .hero-badges b{color:#fff}
+  section{padding:52px 0}
+  .alt{background:var(--bg)}
+  h2{font-size:27px;color:var(--navy);margin-bottom:8px}
+  .sub{color:var(--muted);margin-bottom:30px;max-width:660px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:24px 20px}
+  .card .ic{font-size:30px;margin-bottom:10px}
+  .card h3{color:var(--navy);font-size:18px;margin-bottom:7px}
+  .card p{color:var(--muted);font-size:14.5px}
+  .why{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .why div{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px}
+  .why h3{color:var(--navy);font-size:17px;margin-bottom:6px}
+  .why p{color:var(--muted);font-size:14.5px}
+  .stars{color:#f5a623;font-size:20px;letter-spacing:2px}
+  .rating-big{font-size:34px;font-weight:800;color:var(--navy)}
+  .sample-note{font-size:12px;color:#93a3ae;margin-top:14px}
+  .quote{background:var(--navy);border-radius:12px;padding:34px;color:#fff}
+  .quote h2{color:#fff}
+  .quote .sub{color:#bcdde6}
+  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .form-grid .full{grid-column:1/-1}
+  label{font-size:13px;font-weight:600;display:block;margin-bottom:5px;color:#d3edf3}
+  input,select,textarea{width:100%;padding:11px 12px;border-radius:6px;border:1px solid #2a5a6e;background:#fff;font-size:15px;color:var(--ink);font-family:inherit}
+  textarea{resize:vertical;min-height:84px}
+  .submit{margin-top:16px;background:var(--accent);color:#fff;border:none;padding:14px 30px;border-radius:7px;font-weight:700;font-size:16px;cursor:pointer;width:100%}
+  .submit:hover{background:var(--accent-d)}
+  .form-note{font-size:12.5px;color:#8fc3d1;margin-top:12px;text-align:center}
+  footer{background:#04202c;color:#a8c6cf;padding:44px 0 30px;font-size:14.5px}
+  footer .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  footer h4{color:#fff;margin-bottom:10px;font-size:16px}
+  footer a{color:#a8c6cf}
+  footer a:hover{color:#fff}
+  .foot-bottom{border-top:1px solid #14404f;margin-top:30px;padding-top:18px;font-size:12.5px;color:#7496a1;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+  .demo-tag{background:#e6f6fa;border:1px dashed var(--accent);color:#0b4a5e;border-radius:8px;padding:10px 16px;font-size:13px;margin:22px auto 0;max-width:1080px}
+  @media (max-width:820px){
+    .grid{grid-template-columns:1fr 1fr}
+    .why{grid-template-columns:1fr}
+    footer .cols{grid-template-columns:1fr}
+    .hero h1{font-size:30px}
+    nav{display:none}
+  }
+  @media (max-width:520px){
+    .grid{grid-template-columns:1fr}
+    .form-grid{grid-template-columns:1fr}
+    .topbar .wrap{justify-content:center;text-align:center}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div>Air Conditioning · Heating · Plumbing — San Marcos, TX · License TACLB92599C</div>
+    <a class="call-btn" href="tel:+15126651941">📞 Call (512) 665-1941</a>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <div class="logo">Mr. Kool's <span>Air-dition</span><small>San Marcos, Texas</small></div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#request">Request Service</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <h1>AC service in San Marcos — <em>one tap to call</em>, one form to book.</h1>
+    <p>Mr. Kool's Air-dition LLC handles air conditioning, heating and plumbing for homes in San Marcos, TX. Call, or send a service request right here — day or night, it lands in our inbox.</p>
+    <div class="hero-actions">
+      <a class="btn btn-accent" href="tel:+15126651941">📞 (512) 665-1941</a>
+      <a class="btn btn-ghost" href="#request">Request Service Online</a>
+    </div>
+    <div class="hero-badges">
+      <div>⭐ <b>Rated 4.9</b> from 25 customer reviews</div>
+      <div>🪪 <b>Licensed</b> TACLB92599C</div>
+      <div>📍 <b>San Marcos, TX</b> — 520 Linda Dr</div>
+    </div>
+  </div>
+</div>
+
+<section id="services" class="alt">
+  <div class="wrap">
+    <h2>Our Services</h2>
+    <p class="sub">Air, heat and water — one licensed local company for all three. [DETAILED SERVICE LIST — to be confirmed by the business]</p>
+    <div class="grid">
+      <div class="card">
+        <div class="ic">❄️</div>
+        <h3>Air Conditioning</h3>
+        <p>AC service for San Marcos homes through the Texas heat. [SPECIFIC AC SERVICES — e.g. repair, replacement, tune-ups — to be confirmed]</p>
+      </div>
+      <div class="card">
+        <div class="ic">🔥</div>
+        <h3>Heating</h3>
+        <p>Heating service when the cold fronts roll in. [SPECIFIC HEATING SERVICES — to be confirmed]</p>
+      </div>
+      <div class="card">
+        <div class="ic">🔧</div>
+        <h3>Plumbing</h3>
+        <p>Plumbing service alongside our HVAC work. [SPECIFIC PLUMBING SERVICES — to be confirmed]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <h2>Why San Marcos Calls Mr. Kool's</h2>
+    <p class="sub">What a working homepage should make obvious in ten seconds:</p>
+    <div class="why">
+      <div>
+        <h3>Rated 4.9 by your neighbors</h3>
+        <p>Rated 4.9 from 25 customer reviews — right on the homepage, where people searching for AC help can see it.</p>
+      </div>
+      <div>
+        <h3>Licensed and local</h3>
+        <p>Texas AC license TACLB92599C, based right here in San Marcos at 520 Linda Dr — not a call center.</p>
+      </div>
+      <div>
+        <h3>Book online, any hour</h3>
+        <p>AC dies at 9pm, not 9am. The request form below works around the clock and goes straight to our inbox.</p>
+      </div>
+      <div>
+        <h3>[YOUR DIFFERENTIATOR]</h3>
+        <p>[e.g. response times, guarantees, years in business — to be provided by the business]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="alt">
+  <div class="wrap">
+    <h2>What Customers Say</h2>
+    <div class="card" style="max-width:560px">
+      <div class="stars">★★★★★</div>
+      <div class="rating-big">4.9</div>
+      <p>Rated 4.9 from 25 customer reviews.</p>
+      <p class="sample-note">[Individual customer reviews will be pulled from the business's real review profiles at launch — no review text is shown on this sample.]</p>
+    </div>
+  </div>
+</section>
+
+<section id="request">
+  <div class="wrap">
+    <div class="quote">
+      <h2>Request Service Online</h2>
+      <p class="sub">This is the piece a dead website link can't do — a form that works. Send it and the request goes straight to Mr. Kool's Air-dition.</p>
+      <form action="#" method="post" onsubmit="return false;">
+        <div class="form-grid">
+          <div>
+            <label for="k-name">Your name</label>
+            <input id="k-name" type="text" placeholder="Your full name" autocomplete="name">
+          </div>
+          <div>
+            <label for="k-phone">Phone</label>
+            <input id="k-phone" type="tel" placeholder="(512) 000-0000" autocomplete="tel">
+          </div>
+          <div>
+            <label for="k-email">Email</label>
+            <input id="k-email" type="email" placeholder="you@example.com" autocomplete="email">
+          </div>
+          <div>
+            <label for="k-service">Service needed</label>
+            <select id="k-service">
+              <option>Air conditioning</option>
+              <option>Heating</option>
+              <option>Plumbing</option>
+              <option>Not sure — please advise</option>
+            </select>
+          </div>
+          <div>
+            <label for="k-date">Preferred date</label>
+            <input id="k-date" type="date">
+          </div>
+          <div>
+            <label for="k-time">Preferred time</label>
+            <select id="k-time">
+              <option>Morning</option>
+              <option>Afternoon</option>
+              <option>First available</option>
+            </select>
+          </div>
+          <div class="full">
+            <label for="k-msg">Tell us what's going on</label>
+            <textarea id="k-msg" placeholder="e.g. AC is running but not cooling, house is at 82°…"></textarea>
+          </div>
+        </div>
+        <button class="submit" type="submit">Request Service</button>
+        <p class="form-note">Sample form (front-end only) — on a live site, submissions go straight to mrkools@yahoo.com and the customer gets a confirmation.</p>
+      </form>
+    </div>
+    <div class="demo-tag">🧪 Sample homepage concept built for Mr. Kool's Air-dition LLC — not affiliated with the business.</div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Mr. Kool's Air-dition LLC</h4>
+        <p>Air conditioning, heating and plumbing service based in San Marcos, TX. License TACLB92599C.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>📞 <a href="tel:+15126651941">(512) 665-1941</a><br>
+        ✉️ <a href="mailto:mrkools@yahoo.com">mrkools@yahoo.com</a><br>
+        📍 520 Linda Dr, San Marcos, TX 78666</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>[BUSINESS HOURS — to be confirmed by the business]</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 Mr. Kool's Air-dition LLC. (Sample site)</div>
+      <div>Sample homepage concept built for Mr. Kool's Air-dition LLC — not affiliated with the business.</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
